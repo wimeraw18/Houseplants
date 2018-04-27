@@ -1,4 +1,5 @@
 
+/* ------------------------------------ ELEMENT SELECTORS -------------------------------------------- */
 * {
   box-sizing: border-box;
 }
@@ -8,20 +9,12 @@ html {
 }
 
 header {
-  /* margin: 10px 0 0 10px; */
-  /* border-right: solid darkblue 2px;
-  border-left: solid darkblue 2px; */
-  background: linear-gradient(0deg, cornsilk, 25%, transparent),
+  background: linear-gradient(0deg, cornsilk, 25%, transparent), /*FADE EFFECT ON MAIN HEADER*/
               url('img/gardening.jpg');
   background-size: cover;
   background-position: center;
   padding-top: 5px;
-  /* padding-bottom: 12%; */
   position: relative;
-  width: 100%;
-  margin-bottom: 0;
-  margin-right: 0;
-
 }
 
 ul {
@@ -29,22 +22,8 @@ ul {
   padding-left: 0;
 }
 
-.main-title {
-  text-align: left;
-  /* font-size: 1.5em; */
-  font-family: 'Playfair Display', serif;
-  padding: 2px;
-  width: 100%;
-  color: white;
-  text-shadow: 4px 4px 5px #333;
-}
-
 nav {
   font-family: 'Questrial', sans-serif;
-}
-
-nav ul:first-child {
-  margin: 0;
 }
 
 ul li  {
@@ -52,10 +31,6 @@ ul li  {
   border-left: solid darkblue 1px;
   text-align: center;
   border-radius: .5em;
-}
-ul li:hover {
-  transform: scale(1.1);
-  background: forestgreen;
 }
 
 a {
@@ -71,54 +46,8 @@ main {
   max-width: 960px;
 }
 
-.ex {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
 img {
   image-orientation: from-image;
-}
-
-/********************** FONTS **********************************/
-
-h1 {
-	font-family: 'Questrial', sans-serif;
-	/* font-size: 1.2em; */
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 22.5px;
-}
-
-h2 {
-  font-family: 'Questrial', sans-serif;
-	/* font-size: 2.2em; */
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 18px;
-}
-
-h3 {
-	font-family: 'Questrial', sans-serif;
-	/* font-size: 14px; */
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 15.4px;
-}
-
-p {
-	font-family: 'Questrial', sans-serif;
-  text-align: left;
-	/* font-size: 18px; */
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 1.5em;
 }
 
 footer {
@@ -132,95 +61,73 @@ footer {
   /* margin-top: 100px; */
   color: gold;
 }
-/********************************* END FONTS ******************************************/
 
-/* Class Selectors */
+
+/* ------------------------------------ END ELEMENT SELECTORS -------------------------------------------- */
+
+/* ------------------------------------ FONTS ------------------------------------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: 'Questrial', sans-serif;
+}
+
+
+
+
+/* ------------------------------------ END FONTS -------------------------------------------- */
+
+/* ------------------------------------ CLASS SELECTORS -------------------------------------------- */
+
+.site-title {
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  padding: 2px;
+  width: 100%;
+  color: white;
+  text-shadow: 4px 4px 5px #333;
+}
+
+.main-title,
+.title {
+  text-align: center;
+}
+
 .primary-content {
   text-align: left;
 
 }
 
-
-
 .secondary-content {
   text-align: left;
-}
-
-.phil,
-.aloe {
-
-}
-
-.phil {
-  margin-bottom: 60px;
-}
-
-.title {
-  text-align: center;
 }
 
 .container {
   width: 95%;
   margin: 0 auto 100px auto;
 }
-
-/* COLUMNS DISPLAY */
-/* .col {
-  width: 50%;
-  display: inline-block;
-  margin-right: -4px;
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  vertical-align: top;
-} */
-/* ID Selectors  */
-
-/* #philodendron {
-  width: 80%;
-  display: block;
-  margin-bottom: 1.876em;
-  /* border: solid darkblue 2px; */
-  /* border-radius: 20px;
-  box-shadow: 0px 15px 20px 0px #222;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
-} 
-*/ */
-/* 
-#aloevera {
-  width: 80%;
-  /* border: solid darkblue 2px; */
-  /* border-radius: 20px;
-  box-shadow: 0px 15px 20px 0px #222;
-  margin-bottom: 50px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-} */ */
-
-/* HOVER RULES */
+/* ------------------------------------ END CLASS SELECTORS -------------------------------------------- */
+/* ------------------------------------ HOVER RULES -------------------------------------------- */
 
 a:hover {
   color: yellow;
 }
 
-li:hover {
-  background-color: rgba(0, 155, 0, .40);
-
+ul li:hover {
+  transform: scale(1.1);
+  background: forestgreen;
 }
 
-/* FLEXBOX */
-/* .flex {
-  display: flex;
-} */
-/* Media Querys  */
+li:hover {
+  background-color: rgba(0, 155, 0, .40);
+}
+
+/* ------------------------------------ MEDIA QUERIES -------------------------------------------- */
 
 @media (min-width: 500px){
-  /* .main-nav {
-    display: flex; */
-
-  /* } */
   .main-header {
     display: flex;
     flex-wrap: wrap;
@@ -230,21 +137,16 @@ li:hover {
 
   .main-title {
     margin: auto;
-    /* font-size: 2.25em; */
     padding-left: 2%;
+    padding-top: 2%;
+    margin-bottom: 2%;
   }
-
+  
   .nav-items {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
   }
-
-  .ex {
-    /* font-size: 1.6em; */
-    padding-top: 2%;
-  }
-
 
 }
 @media (min-width: 740px){
@@ -280,3 +182,47 @@ li:hover {
   margin-bottom: 2%;
 }
 } 
+
+
+
+
+
+
+
+
+/* ------------------------------------ COLUMNS DISPLAY -------------------------------------------- */
+/* .col {
+  width: 50%;
+  display: inline-block;
+  margin-right: -4px;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  vertical-align: top;
+} */
+/* ID Selectors  */
+
+/* #philodendron {
+  width: 80%;
+  display: block;
+  margin-bottom: 1.876em;
+  /* border: solid darkblue 2px; */
+  /* border-radius: 20px;
+  box-shadow: 0px 15px 20px 0px #222;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+} 
+*/
+/* 
+#aloevera {
+  width: 80%;
+  /* border: solid darkblue 2px; */
+  /* border-radius: 20px;
+  box-shadow: 0px 15px 20px 0px #222;
+  margin-bottom: 50px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+/* ------------------------------------ END COLUMNS DISPLAY -------------------------------------------- */
