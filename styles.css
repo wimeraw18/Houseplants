@@ -96,19 +96,40 @@ p {
   text-align: center;
 }
 
+.gallery  {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* overflow: scroll; */
+  text-align: center;
+}
+
+.gallery img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 3%;
+}
+
+.gallery img:hover {
+  transition: transform .5s;
+  transform: scale(1.1);
+  /* border: solid 1px skyblue; */
+  box-shadow: 0 10px 10px gray;
+}
+
 .primary-content {
-  text-align: left;
+  
 
 }
 
 .secondary-content {
-  text-align: left;
+  
 }
 
 .container {
   width: 95%;
   margin: 0 auto 100px auto;
 }
+
 /* ------------------------------------ END CLASS SELECTORS -------------------------------------------- */
 /* ------------------------------------ HOVER RULES -------------------------------------------- */
 
@@ -119,6 +140,7 @@ a:hover {
 ul li:hover {
   transform: scale(1.1);
   background: forestgreen;
+  border: 1px solid yellow;
 }
 
 li:hover {
@@ -149,39 +171,6 @@ li:hover {
   }
 
 }
-@media (min-width: 740px){
-/* COLUMNS DISPLAY */
- /* .col {
-  width: 50%;
-  display: inline-block;
-  margin-right: -4px;
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  vertical-align: top;
-} */
-.gallery  {
-  display: flex;
-  justify-content: center;
-  /* overflow: scroll; */
- 
-}
-.gallery img {
-  width: 90%;
-  
-  border-radius: 5px;
-}
-.gallery img:hover {
-  filter: none;
-  transition: transform .5s;
-  transform: scale(1.1);
-  /* border: solid 1px skyblue; */
-  /* box-shadow: 0 10px 10px gray; */
- 
-}
-.ex {
-  margin-bottom: 2%;
-}
-} 
 
 
 
