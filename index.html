@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Our Houseplants</title>
     <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
@@ -13,7 +14,7 @@
     <div class="wrapper" id="top">
       <header class="main-header">
         <h1 class="site-title">Alaric &amp; Minji's Houseplants</h1>
-        <!-- ------------------------------------------ START NAVIGATION ----------------------------------------------- -->
+        <!--  START NAVIGATION  -->
         <nav class ="main-nav">
           <ul class ="nav-items">
             <li><a href="#">About Us</a></li>
@@ -22,25 +23,39 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <!-- ------------------------------------------ END NAVIGATION ---------------------------------------------------->
+        <!--  END NAVIGATION -->
       </header>
 
       <main class="container">
         <h1 class="main-title">This website showcases our beloved houseplants.</h1>
-        <!-- ------------------------------------------ START IMAGE GALLERY ---------------------------------------------------->
+        <!--  START IMAGE GALLERY -->
         <div class="gallery">
-          <a href="img/philodendron.jpg"><img src="img/philodendron_tn.jpg" alt="Philodendron Plant"></a>
-            <a href="#philodendron">Philodendron</a>
-          <a href="img/aloe.jpg"><img src="img/aloe_tn.jpg" alt="Aloe Vera Plant"></a>
-            <a href="#aloe-vera">Aloe Vera</a>
-          <a href="img/jade.jpg"><img src="img/jade_tn.jpg" alt="Jade Plant"></a>
-            <a href="#jade">Jade</a>
-          <a href="img/dracaena.jpg"><img src="img/dracaena_tn.jpg" alt="Dracaena Plant"></a>
-            <a href="#dracaena">Dracaena</a>
-          <a href="img/rubber_tree.jpg"><img src="img/rubber_tree_tn.jpg" alt="Rubber Tree Plant"></a>
-            <a href="#rubber-tree">Rubber Tree</a>
-        </div>
-        <!-- ------------------------------------------ END IMAGE GALLERY ---------------------------------------------------->
+          <div class="row">
+            <div class="col-md-4">
+                <a href="img/philodendron.jpg"><img src="img/philodendron_tn.jpg" alt="Philodendron Plant"></a>
+                <a href="#philodendron">Philodendron</a>
+            </div> <!-- END COL -->
+            <div class="col-md-4">
+                <a href="img/aloe.jpg"><img src="img/aloe_tn.jpg" alt="Aloe Vera Plant"></a>
+                <a href="#aloe-vera">Aloe Vera</a>
+            </div> <!-- END COL -->
+            <div class="col-md-4">
+                <a href="img/jade.jpg"><img src="img/jade_tn.jpg" alt="Jade Plant"></a>
+                <a href="#jade">Jade</a>
+            </div> <!-- END COL -->
+          </div> <!-- END ROW -->
+          <div class="row">
+            <div class="col-md-6">
+              <a href="img/dracaena.jpg"><img src="img/dracaena_tn.jpg" alt="Dracaena Plant"></a>
+              <a href="#dracaena">Dracaena</a>
+            </div>  <!-- END COL -->
+            <div class="col-md-6">
+              <a href="img/rubber_tree.jpg"><img src="img/rubber_tree_tn.jpg" alt="Rubber Tree Plant"></a>
+              <a href="#rubber-tree">Rubber Tree</a>
+            </div> <!-- END COL -->
+          </div> <!-- END ROW -->
+        </div> <!-- END GALLERY DIV -->
+        <!--  END IMAGE GALLERY -->
         <section class="primary-content" id="philodendron">
           <h2 class="title">Philodendron</h2>
             <p>
@@ -83,7 +98,8 @@
     <footer>
       <span>&copy;2018 Alaric Wimer</span>
     </footer>
-    <!-- <script src="scripts.js"></script>-->
+    <!-- Bootstrap's Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 <!-- sections are like chapters in a book, articles are like poems in a volume -->
-</html
+</html>
